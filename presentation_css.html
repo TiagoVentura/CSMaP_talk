@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>News Sharing, Activation and Perceived Polarization on Social Media</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tiago Ventura" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+    <link rel="stylesheet" href="mytheme-fonts.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# News Sharing, Activation and Perceived Polarization on Social Media
+### Tiago Ventura
+### University of Maryland, College Park
+### Job Talk McCourt School - 11/05/2021
+
+---
+
+
+
+
+
+
+name: about-me
+layout: false
+class: about-me-slide, inverse, middle, center
+
+
+## .red[About me]
+
+&lt;img style="border-radius: 40%;" src="./figs/tiago.jpg" width="150px"/&gt;
+
+### Tiago Ventura
+
+### Researcher Civic Integrity at Twitter
+
+.fade[PhD Candidate at University of Maryland, College Park]
+
+[&lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"&gt;&lt;/path&gt;&lt;/svg&gt; @TiagoVentura_](https://twitter.com/_Tiagoventura)
+[&lt;svg role="img" viewBox="0 0 24 24" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"&gt;&lt;/path&gt;&lt;/svg&gt; TiagoVentura](https://github.com/TiagoVentura)
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"&gt;&lt;/path&gt;&lt;/svg&gt; venturat@umd.edu](venturat@umd.edu)
+[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;title&gt;&lt;/title&gt;  &lt;path d="M208,352H144a96,96,0,0,1,0-192h64" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/path&gt;  &lt;path d="M304,160h64a96,96,0,0,1,0,192H304" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/path&gt;  &lt;line x1="163.29" y1="256" x2="350.71" y2="256" style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:36px"&gt;&lt;/line&gt;&lt;/svg&gt;https://tiagoventura.rbind.io/](https://tiagoventura.rbind.io/)
+
+
+---
+class:middle 
+## Plans for the talk
+
+---
+class:middle 
+## Plans for the talk
+
+#### CSS &amp; Political Communication
+
+- News Sharing, activation and perceived polarization on social media 
+
+---
+class:middle 
+
+## Plans for the talk
+
+#### CSS &amp; Political Communication
+
+- News Sharing, activation and perceived polarization on social media 
+
+
+#### Overview of my research agenda
+
+- New Methods in CSS 
+
+- Political Communication 
+
+- Comparative Politics
+
+---
+class:inverse, middle, center
+
+## News Sharing, Activation and Perceived Polarization on Social Media
+
+---
+class:middle 
+
+### .center[.blue[Social media increases sorting]]
+
+### .center[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-32-316v116h-67c-10.7 0-16 12.9-8.5 20.5l99 99c4.7 4.7 12.3 4.7 17 0l99-99c7.6-7.6 2.2-20.5-8.5-20.5h-67V140c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12z"&gt;&lt;/path&gt;&lt;/svg&gt;]
+
+### .center[.blue[Echo Chambers]]
+
+#### .center[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-32-316v116h-67c-10.7 0-16 12.9-8.5 20.5l99 99c4.7 4.7 12.3 4.7 17 0l99-99c7.6-7.6 2.2-20.5-8.5-20.5h-67V140c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12z"&gt;&lt;/path&gt;&lt;/svg&gt;]
+
+### .center[.blue[Reduce cross-cutting exposure]]
+
+### .center[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm-32-316v116h-67c-10.7 0-16 12.9-8.5 20.5l99 99c4.7 4.7 12.3 4.7 17 0l99-99c7.6-7.6 2.2-20.5-8.5-20.5h-67V140c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12z"&gt;&lt;/path&gt;&lt;/svg&gt;]
+
+### .center[.red[Polarization]]
+
+
+
+---
+class: middle
+
+### Are social media echo-chambers real? 
+
+
+- Online Sorting is similar to offline levels .red[(Gentzkow and Shapiro, 2011)]
+
+- Users' friendship networks are heterogeneous outside of politics .red[(Bakshy et al. 2012; Barbéra  et  al.,  2015;  Wojcieszak  and  Mutz, 2009)]
+
+- Users’ digital media diets are balanced, and strongly influenced by big reputable outlets .red[(Guess 2021)]
+
+- Exposure to counter-attitudinal and uncivil content increases  affective polarization .red[(Bail et al., 2018, Banks et al., 2021; Suhay et al., 2018)]
+
+---
+class:inverse, middle, center
+
+# &lt;svg viewBox="0 0 384 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+### Most users are embedded in heterogenous online networks, yet widespread perceptions of polarization on social media are still strong among users, experts, and policymakers
+
+---
+class: middle
+
+# Main contributions
+
+---
+class: middle
+
+# Main contributions
+
+#### Activation x Sorting: .red[*Content on social media depends fundamentally on the users’ decision to .red[propagate] messages.*]
+
+---
+class: middle
+
+# Main contributions
+
+#### Activation x Sorting: .red[*Content on social media depends fundamentally on the users’ decision to .red[propagate] messages.*]
+
+
+#### *Social media bubbles emerge from .red[activation], even if the users' friendship networks are .red[heterogenous]*
+
+
+
+---
+class: middle, inverse, center
+
+## Modeling Sharing Behavior on Social Media Data
+
+---
+### Activation Bubbles in Social Media
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+&lt;img src="./figs/EmbeddedNews2Bolsonaro.png" width="100%" /&gt;
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+&lt;img src="./figs/EmbeddedNews2maldonado_large.png" width="100%" /&gt;
+]
+]
+
+.panel[.panel-name[United States]
+
+.center[
+&lt;img src="./figs/EmbeddedNews1travelban_large.png" width="100%" /&gt;
+]
+
+]
+]
+
+
+---
+## News Sharing Model 
+
+.center[**Why do Users Share News on Social Media?**]
+
+.center[
+&lt;img src="./figs/Calvo-NBPD-Facebook.jpg" width="100%" /&gt;
+]
+
+---
+## News Sharing Model 
+
+.pull-left[.center[
+&lt;img src="./figs/matrix.png" width="100%" /&gt;
+]]
+.pull-right[.center[
+#### Bolsonaro Twitter Network 
+&lt;img src="./figs/net_b.png" width="100%" /&gt;
+]]
+
+---
+## Results: Ideology
+
+.center[
+&lt;img src="./figs/ideo_flip.png" width="65%" /&gt;
+]
+
+---
+## Results: Attention
+
+.center[
+&lt;img src="./figs/att_flip.png" width="65%" /&gt;
+]
+---
+
+## Conclusion: Attention and Ideology
+
+.pull-left[
+**Strong correlation between ideology and attention:**
+
+- More partisan users share more content
+
+- Partisan content will be over-represented.
+
+- Social media bubbles will emerge from activation, even if networks are heterogenous.
+
+]
+
+.pull-right[
+&lt;img src="./figs/corr_figure.png" width="100%" /&gt;
+]
+
+---
+class: middle, inverse, center
+
+## Modeling Social Media Activation with Image-Based Conjoint Experiments
+
+---
+class:middle
+
+### .red[*Observational data cannot fully separate activation from sorting.]*
+
+**Solution**: Image-Based Conjoint Experiments
+
+**Advantages**:
+
+- Flexible
+
+- Equal probability for all the frames
+
+- High ecological validity
+
+**Outcomes**: Which message would you share? Which message are your friends more likely to share?
+
+
+---
+## Image-Based Conjoints
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+&lt;img src="./figs/ElementsBrazil.png" width="70%" /&gt;
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+&lt;img src="./figs/ElementsArgentina.JPG" width="70%" /&gt;
+]
+]
+
+.panel[.panel-name[Mexico]
+
+.center[
+&lt;img src="./figs/ElementsMexico.JPG" width="80%" /&gt;
+]
+
+]
+]
+
+
+
+---
+class: middle
+
+
+.pull-left-narrow[
+
+#### .red[Hypothesis] 
+
+]
+
+.pull-right-wide[
+
+- *H1: Partisan users will be unconditionally more issue motivated than non-partisan voters to share political content.*
+
+- *H2: Users will share congruent content that aligns politically with the preferences of their co-partisans (in-group cognitive congruence)*
+
+- *H3: Partisan users expect their friends to share more partisan frames*
+] 
+
+
+---
+## H1: Sharing-Rate
+
+&lt;img src="./figs/sharing_naf.png" width="100%" /&gt;
+
+
+---
+## H2: Framing Activation
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+&lt;img src="./figs/br_self_mm_gu.png" width="85%" /&gt;
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+&lt;img src="./figs/ar_self_mm_gu.png" width="85%" /&gt;
+]
+]
+
+.panel[.panel-name[Mexico]
+
+.center[
+&lt;img src="./figs/mx_self_mm_gu.png" width="85%" /&gt;
+]
+]
+]
+
+---
+## H3: Would your friend share?
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+&lt;img src="./figs/br_friends_mm_gu.png" width="85%" /&gt;
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+&lt;img src="./figs/ar_friends_mm_gu.png" width="85%" /&gt;
+]
+]
+
+.panel[.panel-name[Mexico]
+
+.center[
+&lt;img src="./figs/mx_friends_mm_gu.png" width="85%" /&gt;
+]
+]
+]
+
+---
+class: middle
+## Main Take Aways
+
+
+---
+class: middle
+## Main Take Aways
+
+
+#### *Clear experimental evidence that a social network with input frame elements with .red[random uniform probabilities] will output local frames that will .red[over-represent] the preferences of partisan respondents*
+
+---
+class: middle
+## Main Take Aways
+
+
+#### *Clear experimental evidence that a social network with input frame elements with .red[random uniform probabilities] will output local frames that will .red[over-represent] the preferences of partisan respondents*
+
+#### *As in observational data, bubbles emerge from .red[propagation] formed as a consequence of statitical  correlation between .red[attention and ideology]*
+
+
+---
+class: middle
+## Main Take Aways
+
+
+#### *Clear experimental evidence that a social network with input frame elements with .red[random uniform probabilities] will output local frames that will .red[over-represent] the preferences of partisan respondents*
+
+#### *As in observational data, bubbles emerge from .red[propagation] formed as a consequence of statitical  correlation between .red[attention and ideology]*
+
+#### *Affordances from social media activation creates an ecosystem where .red[even non-sorted users] are exposed to .red[more ideological content] on social media*
+
+
+---
+class:middle
+
+## .red[Policy Implications]
+
+--
+#### Slowing Sharing Behavior: .red[Social media circuit breakers]
+
+#### Double click retweet policy during the US Presidential Election
+--
+
+---
+class:center, middle, inverse
+
+## Overall Research Agenda
+
+#### *.red[And its CSS applications]*
+
+
+---
+## Overall Research Agenda
+
+&lt;br&gt;
+
+.panelset.sideways[
+
+.panel[.panel-name[Political Communication]
+
+**Streaming Chats**: 
+
+- [Political Effects of Streaming Chats](https://osf.io/r6muc/): Field Digital Experiment 
+
+- [Toxicity and Streaming Chats on Facebook](https://journalqd.org/article/view/2573): Develop scrappers to collect more 100k chatboxes' comments from Facebook
+
+]
+
+
+
+.panel[.panel-name[CSS Methods]
+
+- Strategies to work with Big Social Media Network Data: [The Path-Weighted Regression Model](https://methods.sagepub.com/book/research-methods-in-political-science-and-international-relations/i4823.xml) 
+
+- Image-Based Behavioral Experiments: [voting](https://tiagoventura.rbind.io/files/ventura_voting_for_violence_jmp.pdf), [preferences for police allocation](), [social media activation](https://www.dropbox.com/s/r23wwboo6mirpq0/naf.pdf?dl=0)
+
+- Natural Language Processing: Word Embeddings for Ideal-Points Estimation.
+
+]
+
+.panel[.panel-name[Comparative Politics]
+
+As a comparativist, most of my work focuses on issues of **criminal violence, security policies, and preferences for law and order candidates** in Latin America.
+
+- [A Network Approach to Crime Victimization](https://tiagoventura.rbind.io/files/net.pdf): Novel network strategies to model overdispersion of crime. 
+
+- [Who owns the issue of security in fragmented democracies?](https://www.dropbox.com/s/e7p9v4ezmpf4ppt/Legislating_for_Violence.pdf?dl=0): 140k Legislative Sppeeches (Audio + Text) - Topic Models + NLP.
+
+- [Criminal Organizations and provision of public goods during Covid-19 pandemic](https://egap.org/project/criminal-governance-amid-the-covid-19-pandemic-explaining-violence-and-goods-provision-as-public-health-responses-by-organized-crime-groups-in-mexico/): Facebook Ads to target hard-to-reach population
+
+]
+]
+
+
+---
+class:inverse, middle
+
+&lt;img src="./figs/my_research.jpg" width="100%" /&gt;
+
+---
+class:inverse, center, middle
+
+## Thank you
+
+---
+#### Path-Weighted Regression Model (With J. Timoneda and E. Calvo)
+
+.panelset[
+
+.panel[.panel-name[Problem]
+#### How to model network dependency with Big Data?
+
+- Most network models are to computationally intensive for large networks.
+
+- Solution: Model Locally + Weighted by Closest Paths
+
+- Extension of Geographically Weighted Regression Model
+
+- Use Cross-Validation to Determine Optimal Number of Paths
+
+- Allows to model heterogeneity on networks and easy to paralelize.
+]
+
+.panel[.panel-name[Results]
+
+.center[
+
+
+&lt;img src="./figs/slope_cwr.png" width="70%" /&gt;
+
+CB Ford’s testimony. time to retweet ~ In-degree
+
+]
+]
+]
+
+
+---
+class:middle, center, inverse
+
+## NAF Extra: Argentina Conjoint
+
+---
+
+## Framing Activation (Partisans vs Non-Partisans)
+
+&lt;img src="./figs/ar_self_mm.png" width="90%" /&gt;
+
+
+
+---
+## Expectations in the Network
+
+&lt;img src="./figs/ar_self_friends_mm.png" width="90%" /&gt;
+
+---
+class:inverse, middle, center
+
+## Mexico Conjoint
+
+---
+
+## Framing Activation (Partisans vs Non-Partisans)
+
+&lt;img src="./figs/mx_self_mm.png" width="90%" /&gt;
+
+
+
+---
+## Expectations in the Network
+
+&lt;img src="./figs/mx_self_friends_mm.png" width="90%" /&gt;
+
+---
+
+class:inverse, middle, center
+
+## Streaming Chats: Extra
+
+---
+
+## New Technologies: Streaming Chats
+
+.panelset[
+
+.panel[.panel-name[Streaming Chats]
+
+.pull-left[
+
+**Video Feed + Social Chat: All in one screen.**
+
+Popular among the younger generations.
+
+- Twitch (Amazon)
+- YouTube/YouTube Gaming (Google)
+- Mixer (Microsoft)
+- Facebook Lives
+]
+.pull-right[
+&lt;img src="./figs/genelectionabc.png" width="80%" /&gt;
+]
+]
+
+.panel[.panel-name[Field Experiment]
+
+
+We conducted a large scale ''field" experiment that assigns would-be debate viewers to watch on different platforms the October 2019 Democratic Debate.
+
+Two-Wave On-line Survey in September 2019 through MTurk (following Gross, Porter and Wood, 2019). 
+
+**Three main experimental conditions**
+
+- Control (standard NBC broadcast)
+- Expert chat (538 website)
+- Streaming chat (Facebook)
+
+We then surveyed the respondents after the debate and measured the effects of streaming chats. 
+]
+
+.panel[.panel-name[Observational Setup]
+
+#### Text Analysis
+
+To complement our analysis, we built automatic scrapper (Selenium) to collect comments on facebook pages
+
+- One Hundred Thousand Comments  from Facebook pages.
+
+- Several Expert Chats
+
+- Performed Dictionary Methods Sentiment Analysis. 
+
+- Deep Learning Models to identify toxicity. 
+
+
+]
+
+.panel[.panel-name[Next Steps]
+
+#### Grant under review to: 
+
+- Deploy a similar experiment in Brazil, during the Presidential Election
+
+- Combine the field experiments with collection of web-browsing data
+
+- Measure behavioral mechanisms with a laboratory experiment
+
+]
+]
+---
+
+---
+### High Frequency
+
+
+.center[
+&lt;img src="figs/freq-bind.png" width="80%" /&gt;
+]
+---
+### Much more toxic:
+
+.center[
+&lt;img src="figs/proportion_toxicity.png" width="80%" /&gt;
+].footnote[Deep Learning Models from Google Perspective API]
+
+---
+### Contains Mostly Negative Primes
+
+.center[
+&lt;img src="figs/topics_3by_cand.png" width="80%" /&gt;
+]
+
+---
+#### Mostly Negative Polarity about the Candidates
+
+.center[
+&lt;img src="figs/polarity_candidates.png" width="80%" /&gt;
+]
+
+---
+class:inverse, middle, center
+
+## Experimental Results
+
+---
+## Frequency and Toxicity Hypotheses
+.center[
+Facebook chat somewhat less informative, enjoyable, and engaging
+&lt;img src="figs/frequencyplot.png" width="80%" /&gt;
+]
+
+---
+## Feeling Thermomethers about the Candidates
+
+&lt;img src="figs/ftplot.png" width="80%" /&gt;
+
+---
+## Content Effect
+.center[
+&lt;img src="figs/ft_on_negative_comments.png" width="80%" /&gt;
+]
+
+
+---
+## Poll Performance
+
+&lt;img src="figs/pollplot.png" width="80%" /&gt;
+
+---
+## Context Effect
+.center[
+&lt;img src="figs/polls_on_positive_comments.png" width="80%" /&gt;
+]
+
+---
+## Summary
+
+.pull-left[
+**Main Findings**:
+
+- Creates worse viewing experience.
+
+- May disproportionately negatively affect certain candidates subject to toxic, negative comments.
+
+- May distort inferences about candidate viability.
+
+]
+
+.pull-right[
+**Next Steps**:
+
+- More research on the mechanism (laboraty experiments).
+
+- More comparative evidence (Does it replicate to other plataforms or other countries?). 
+
+- More descriptive evidence about these news technologies.
+
+]
+
+---
+class:middle, center, inverse
+
+### Comparative Politics, Violence and CSS
+
+---
+
+## CSS and Political Violence
+
+.panelset[
+
+.panel[.panel-name[Legislating For Violence]
+
+.pull-left[
+
+140 thousand legislative speeches in Brazil (text + audio) 
+
+- Topic modeling to detect speeches about violence + ML Models to detect Issue Ownership.
+
+**Next Steps**: Modern NLP Techniques (Word Embeddings) 
+
+- Emotions in context (word2vec + cossine similarity + dictionary)
+
+- Scaling of policy preferences (doc2vec)
+
+]
+
+.pull-right[
+
+&lt;img src="./figs/topics.png" width="100%" /&gt;
+
+]
+]
+
+.panel[.panel-name[Social Networks of Victimization]
+
+.pull-left[
+
+Novel network models to estimate contextual victimization
+
+- How many friends do you know that had a kid last year?
+
+- How many Silvia do you know?
+
+- How many friend do you know that work as teachers?
+
+- .red[How many friends do you know that were victims of crime?]
+
+]
+
+.pull-right[
+
+.center[
+&lt;img src="./figs/dendogram.png" width="100%" /&gt;
+]
+]
+]
+
+.panel[.panel-name[Facebook Surveys]
+
+.pull-left[
+.center[
+&lt;img src="./figs/cartel.png" width="100%" /&gt;
+]
+]
+
+
+.pull-right[
+
+.center[
+
+**EGAP COVID-19 grant**
+
+&lt;img src="./figs/ads.jpeg" width="60%" /&gt;
+]
+]
+]
+]
+
+---
+
+## Statistical Model
+
+The estimation of the utility function for sharing uses a multilevel overdispersed poisson model. 
+
+.center[
+`\(y_{ij} \sim \mbox{Po}(\mu_i)\)`
+
+`\(\mu_i = \exp(\alpha_{i[q]}\left(x_{i}-L_{j}\right)^2 + A_{[q]} + R_{[j]} + \gamma_{[i]})\)`
+]
+
+Where:
+
+* `\(y_{i}\)` = Number of links embedded by user x media
+
+* `\(\alpha_{q}\)` = Random Slope by quantile 
+
+* `\(A_{q}\)` = Random intercept by quantile
+
+* `\(R_{j}\)` = Random intercept by media outlet 
+
+* `\(\gamma_{[i]}\)` = Overdispersion parameter
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
