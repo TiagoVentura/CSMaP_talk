@@ -52,7 +52,7 @@ class: about-me-slide, inverse, middle, center
 
 <img style="border-radius: 40%;" src="./figs/tiago.jpg" width="150px"/>
 
-### Tiago Ventura
+### Tiago Ventura (He/Him)
 
 ### Researcher Civic Integrity at Twitter
 
@@ -124,42 +124,6 @@ class:inverse, middle, center
 
 ###  Most users are embedded in diverse online social networks where moderation is the norm, yet  perceptions of a highly polarized social media environment are still particularly widespread.
 
----
-
-### Information Bubbles in Social Media
-
-.panelset[
-
-.panel[.panel-name[Brazil]
-
-.center[
-```{r out.width="100%"}
-knitr::include_graphics("./figs/EmbeddedNews2Bolsonaro.png")
-```
-]
-
-
-]
-
-.panel[.panel-name[Argentina]
-
-.center[
-```{r out.width="100%"}
-knitr::include_graphics("./figs/EmbeddedNews2maldonado_large.png")
-```
-]
-]
-
-.panel[.panel-name[United States]
-
-.center[
-```{r out.width="100%"}
-knitr::include_graphics("./figs/EmbeddedNews1travelban_large.png")
-```
-]
-
-]
-]
 
 ---
 class: middle
@@ -167,14 +131,15 @@ class: middle
 ## Core argument
 
 --
+#### `r icons::fontawesome("arrow-alt-circle-right")` Activation vs Sorting: .red[*Propagation on social media depends fundamentally on the users’ sharing decision*] 
+
+--
+
 #### `r icons::fontawesome("arrow-alt-circle-right")`  .red[Activation bubbles] may emerge, even if users are embedded on heterogenous networks. (Composition vs Selection)
 
 --
-#### `r icons::fontawesome("arrow-alt-circle-right")` .red[*Content on social media depends fundamentally on the users’ decision to .red[propagate] messages.*] (Activation vs Sorting) 
 
---
-
-#### `r icons::fontawesome("arrow-alt-circle-right")` .red[*Partisan users are more issue-motivated*] `r icons::fontawesome("arrow-alt-circle-right")`  .red[*partisan content*] will be over-represented even if users' are not fully sorted. 
+#### `r icons::fontawesome("arrow-alt-circle-right")` .red[*Partisan users*] are more issue-motivated `r icons::fontawesome("arrow-alt-circle-right")`  .red[*partisan content*] will be over-represented `r icons::fontawesome("arrow-alt-circle-right")`  the average user experiences .red[*more partisan content*] than the prevalence of partisans.
 
 --
 
@@ -204,6 +169,42 @@ class: middle
 - Regex query search for embedded hyperlinks (DV). 
 
 #### Close to 10 millions retweets + 500 thousand accounts.
+
+
+---
+### Activation Bubbles in Social Media
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+```{r out.width="100%"}
+knitr::include_graphics("./figs/EmbeddedNews1Bolsonaro.png")
+```
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+```{r out.width="100%"}
+knitr::include_graphics("./figs/EmbeddedNews2maldonado_large.png")
+```
+]
+]
+
+.panel[.panel-name[United States]
+
+.center[
+```{r out.width="100%"}
+knitr::include_graphics("./figs/EmbeddedNews1travelban_large.png")
+```
+]
+]
+]
 
 ---
 ## News Sharing: Model 
@@ -235,7 +236,6 @@ knitr::include_graphics("./figs/matrix.png")
 knitr::include_graphics("./figs/net_b.png")
 ```
 ]]
-
 
 ---
 ## Results: Ideology
@@ -426,7 +426,7 @@ class: middle
 
 --
 
-`r icons::fontawesome("arrow-alt-circle-right")` **Clear experimental evidence that a social network with input frame elements with .red[random uniform probabilities] will output local frames that will .red[over-represent] the preferences of partisan respondents**
+`r icons::fontawesome("arrow-alt-circle-right")` **Experimental evidence that a social network with inputs from .red[random uniform probabilities] will output frames that will .red[over-represent] the preferences of partisan respondents**
 
 --
 
@@ -439,14 +439,12 @@ class: middle
 --
 
 ---
-class:middle
-
-## .red[Policy Implications]
+class: middle, center
+## Policy Implications
 
 --
-#### Slowing Sharing Behavior: .red[Social media circuit breakers]
 
-#### Reduce the importance of impressions on internal algorithims. [Twitter Meta's Report](https://cdn.cms-twdigitalassets.com/content/dam/blog-twitter/official/en_us/company/2021/rml/Algorithmic-Amplification-of-Politics-on-Twitter.pdf)
+#### Slowing Sharing Behavior: Double-Click Retweet.
 
 --
 
