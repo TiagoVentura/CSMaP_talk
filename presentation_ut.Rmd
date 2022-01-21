@@ -128,14 +128,14 @@ class:inverse, middle, center
 ---
 class: middle
 
-## Core argument
+## Our Contributtions
 
 --
 #### `r icons::fontawesome("arrow-alt-circle-right")` Activation vs Sorting: .red[*Propagation on social media depends fundamentally on the users’ sharing decision*] 
 
 --
 
-#### `r icons::fontawesome("arrow-alt-circle-right")`  .red[Activation bubbles] may emerge, even if users are embedded on heterogenous networks. (Composition vs Selection)
+#### `r icons::fontawesome("arrow-alt-circle-right")`  .red[Activation bubbles] may emerge even if users are embedded on heterogenous networks. (Composition vs Selection)
 
 --
 
@@ -337,8 +337,6 @@ class: middle
 - *H1: Partisan users will be unconditionally more issue motivated than non-partisan voters to share political content.*
 
 - *H2: Users will share congruent content that aligns politically with the preferences of their co-partisans (in-group cognitive congruence)*
-
-- *H3: Partisan users expect their friends to share more partisan frames*
 ] 
 
 
@@ -386,41 +384,6 @@ knitr::include_graphics("./figs/mx_self_mm_gu.png")
 ]
 
 ---
-## H3: Would your friend share?
-
-.panelset[
-
-.panel[.panel-name[Brazil]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/br_friends_mm_gu.png")
-```
-]
-
-
-]
-
-.panel[.panel-name[Argentina]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/ar_friends_mm_gu.png")
-```
-]
-]
-
-.panel[.panel-name[Mexico]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/mx_friends_mm_gu.png")
-```
-]
-]
-]
-
----
 class: middle
 ## Main Take Aways
 
@@ -435,16 +398,6 @@ class: middle
 --
 
 `r icons::fontawesome("arrow-alt-circle-right")` **Affordances from social media activation creates an ecosystem where .red[even non-sorted users] are exposed to .red[more ideological content] on social media**
-
---
-
----
-class: middle, center
-## Policy Implications
-
---
-
-#### Slowing Sharing Behavior: Double-Click Retweet.
 
 --
 
@@ -523,6 +476,18 @@ class:inverse, center, middle
 ## Extra Slides
 
 ---
+class: middle, center
+## Policy Implications
+
+--
+
+#### Slowing Sharing Behavior: Double-Click Retweet.
+
+--
+
+
+
+---
 #### Path-Weighted Regression Model (With J. Timoneda and E. Calvo)
 
 .panelset[
@@ -560,10 +525,35 @@ CB Ford’s testimony. time to retweet ~ In-degree
 ---
 class:middle, center, inverse
 
-## NAF Extra: Argentina Conjoint
+## NAF Extra
+---
+
+## Brazil Conjoint
+
+---
+## Framing Activation (Partisans vs Non-Partisans)
+
+```{r out.width="90%"}
+knitr::include_graphics("./figs/br_self_mm.png")
+```
+
+
+
+---
+## Expectations in the Network
+
+```{r out.width="90%"}
+knitr::include_graphics("./figs/br_self_friends_mm.png")
+```
+
 
 ---
 
+class:middle, center, inverse
+
+## Argentina Conjoint
+
+---
 ## Framing Activation (Partisans vs Non-Partisans)
 
 ```{r out.width="90%"}
@@ -679,6 +669,9 @@ To complement our analysis, we built automatic scrapper (Selenium) to collect co
 ]
 ]
 ---
+class: middle, center, inverse
+
+## Results
 
 ---
 ### High Frequency
