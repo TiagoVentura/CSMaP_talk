@@ -401,6 +401,10 @@ class: middle
 
 --
 
+`r icons::fontawesome("arrow-alt-circle-right")` **.red[Policy recommendation:] Slowing sharing behavior**
+
+--
+
 ---
 class:center, middle, inverse
 
