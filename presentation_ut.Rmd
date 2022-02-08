@@ -1,8 +1,7 @@
 ---
 title: "News Sharing, Content Activation and Perceived Polarization on Social Media"
 author: "Tiago Ventura"
-institute: "Job Talk"
-date: "Moody College - 01/21/2022"
+date: "CSMaP - 02/11/2022"
 output:
   xaringan::moon_reader:
     css: ["xaringan-themer.css", "custom.css", "mytheme-fonts.css"]
@@ -70,17 +69,27 @@ class:middle
 
 --
 
-#### .red[Book Project:] News Sharing, content activation and perceived polarization on social media 
+#### .red[Book Project:] News sharing, content activation and perceived polarization on social media 
 
---
+- [News Sharing, Gatekeeping and Polarization (*Digital Journalism*)](https://www.tandfonline.com/doi/abs/10.1080/21670811.2020.1852094)
 
-#### Overview of my research agenda
+- [News by Popular Demand (*IJPP*)](https://journals.sagepub.com/doi/abs/10.1177/19401612211057068)
 
-- Political Communication 
+- [Network Activated Frames (Under Review)](https://tiagoventura.rbind.io/files/naf.pdf) 
 
-- New Methods in CSS 
 
-- Comparative Politics
+---
+class:middle 
+
+## Plans for the talk
+
+#### .red[Other projects] on my research agenda
+
+- Political Communication
+
+- New Methods in CSS
+
+- Comparative Political Behavior
 
 ---
 class:inverse, middle, center
@@ -337,6 +346,9 @@ class: middle
 - *H1: Partisan users will be unconditionally more issue motivated than non-partisan voters to share political content.*
 
 - *H2: Users will share congruent content that aligns politically with the preferences of their co-partisans (in-group cognitive congruence)*
+
+- *H3: Partisan users expect their friends to share more partisan frames*
+
 ] 
 
 
@@ -378,6 +390,41 @@ knitr::include_graphics("./figs/ar_self_mm_gu.png")
 .center[
 ```{r out.width="85%"}
 knitr::include_graphics("./figs/mx_self_mm_gu.png")
+```
+]
+]
+]
+
+---
+## H3: Would your friend share?
+
+.panelset[
+
+.panel[.panel-name[Brazil]
+
+.center[
+```{r out.width="85%"}
+knitr::include_graphics("./figs/br_friends_mm_gu.png")
+```
+]
+
+
+]
+
+.panel[.panel-name[Argentina]
+
+.center[
+```{r out.width="85%"}
+knitr::include_graphics("./figs/ar_friends_mm_gu.png")
+```
+]
+]
+
+.panel[.panel-name[Mexico]
+
+.center[
+```{r out.width="85%"}
+knitr::include_graphics("./figs/mx_friends_mm_gu.png")
 ```
 ]
 ]
@@ -440,17 +487,17 @@ class:center, middle, inverse
 
 .panel[.panel-name[CSS Methods]
 
-- Strategies to work with Big Social Media Network Data: [The Path-Weighted Regression Model](https://methods.sagepub.com/book/research-methods-in-political-science-and-international-relations/i4823.xml) 
+- Strategies to work with big social media network data: [The Path-Weighted Regression Model](https://methods.sagepub.com/book/research-methods-in-political-science-and-international-relations/i4823.xml) 
 
 - Image-Based Behavioral Experiments: [social media activation](https://www.dropbox.com/s/r23wwboo6mirpq0/naf.pdf?dl=0)
 
-- Natural Language Processing: Word Embeddings for Ideal-Points Estimation + Contextualized Topic Models
+- Natural Language Processing: Bert-Based Topic Models using pre-trained political contextualized embeddings.
 
 ]
 
 .panel[.panel-name[Comparative Politics]
 
-As a Political Scientist, most of my work focuses on issues of **criminal violence, security policies, and preferences for law and order candidates** in Latin America.
+As a Comparativist, I also do some work focused on issues of **criminal violence and security policies** in Latin America.
 
 - [A Network Approach to Crime Victimization](https://tiagoventura.rbind.io/files/net.pdf): Novel network strategies to model overdispersion of crime. 
 

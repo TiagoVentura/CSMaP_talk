@@ -1,4 +1,4 @@
-# Talk Center for Social Media and Politics - NYU
+# Talk: NYU's Center for Social Media and Politics.
 
 This resposity contains the presentation for my talk at The Center for Social Media and Politics at NYU
 
