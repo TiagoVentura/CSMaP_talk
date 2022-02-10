@@ -120,11 +120,11 @@ class: middle
 
 ### Are social media echo-chambers real? 
 
-- Online Sorting is similar to offline levels .red[(Gentzkow and Shapiro, 2011; Wojcieszak  and  Mutz, 2009)]
+- Online Sorting is similar to offline levels .red[(Gentzkow and Shapiro, 2011; Wojcieszak  and  Mutz, 2009; Bisbee and Larsson, 2017)]
 
 - Users' friendship networks are heterogeneous outside of politics .red[(Bakshy et al. 2012; Barbéra  et  al., 2 015)]
 
-- Users’ digital media diets are balanced, and strongly influenced by big reputable outlets .red[(Guess 2021)]
+- Users’ digital media diets are balanced, and strongly influenced by big reputable outlets .red[(Guess 2021; Cardenal et. al., 2019)]
 
 ---
 class:inverse, middle, center
@@ -165,7 +165,7 @@ class: middle
 
 **Cases**:  .red[Brazil, Argentina, and the United States]
 
-**Source**: Twitter APIs, Forward stream and the backward search
+**Source**: Twitter APIs, Forward stream and the backward search (Using Twarc)
 
 **Pre-Processing**: 
 
@@ -239,6 +239,7 @@ $\mu_i = \exp(\alpha_{i[q]}\left(x_{i}-L_{j}\right)^2 + A_{[q]} + R_{[j]} + \gam
 knitr::include_graphics("./figs/matrix.png")
 ```
 ]]
+
 .pull-right[.center[
 #### Bolsonaro Twitter Network 
 ```{r out.width="100%"}
@@ -288,10 +289,23 @@ knitr::include_graphics("./figs/corr_figure.png")
 
 ---
 
-class: center, middle
+class: middle
 
 ## .red[*Observational data cannot fully separate activation from sorting.]*
 
+--
+
+**Solution**: Image-Based Conjoint Experiments
+
+**Advantages**:
+
+- Flexible: Ideal for social media experiments.
+
+- Equal probability for all the frames
+
+- High ecological validity
+
+--
 
 ---
 ## Image-Based Conjoints
@@ -372,9 +386,10 @@ knitr::include_graphics("./figs/sharing_naf.png")
 knitr::include_graphics("./figs/br_self_mm_gu.png")
 ```
 ]
-
-
 ]
+
+
+
 
 .panel[.panel-name[Argentina]
 
@@ -459,6 +474,12 @@ class:center, middle, inverse
 
 #### *.red[And its CSS applications]*
 
+---
+class:inverse, middle
+
+```{r  echo=FALSE, out.width= '100%'}
+knitr::include_graphics("./figs/network.jpg")
+```
 
 ---
 ## Overall Research Agenda
@@ -508,13 +529,6 @@ As a Comparativist, I also do some work focused on issues of **criminal violence
 ]
 ]
 
-
----
-class:inverse, middle
-
-```{r  echo=FALSE, out.width= '100%'}
-knitr::include_graphics("./figs/network.jpg")
-```
 
 ---
 class:inverse, center, middle
