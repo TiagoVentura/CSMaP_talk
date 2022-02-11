@@ -361,7 +361,6 @@ class: middle
 
 - *H2: Users will share congruent content that aligns politically with the preferences of their co-partisans (in-group cognitive congruence)*
 
-- *H3: Partisan users expect their friends to share more partisan frames*
 
 ] 
 
@@ -411,41 +410,6 @@ knitr::include_graphics("./figs/mx_self_mm_gu.png")
 ]
 
 ---
-## H3: Would your friend share?
-
-.panelset[
-
-.panel[.panel-name[Brazil]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/br_friends_mm_gu.png")
-```
-]
-
-
-]
-
-.panel[.panel-name[Argentina]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/ar_friends_mm_gu.png")
-```
-]
-]
-
-.panel[.panel-name[Mexico]
-
-.center[
-```{r out.width="85%"}
-knitr::include_graphics("./figs/mx_friends_mm_gu.png")
-```
-]
-]
-]
-
----
 class: middle
 ## Main Take Aways
 
@@ -472,14 +436,9 @@ class:center, middle, inverse
 
 ## Overall Research Agenda
 
+
 #### *.red[And its CSS applications]*
 
----
-class:inverse, middle
-
-```{r  echo=FALSE, out.width= '100%'}
-knitr::include_graphics("./figs/network.jpg")
-```
 
 ---
 ## Overall Research Agenda
@@ -529,6 +488,12 @@ As a Comparativist, I also do some work focused on issues of **criminal violence
 ]
 ]
 
+---
+class:inverse, middle
+
+```{r  echo=FALSE, out.width= '100%'}
+knitr::include_graphics("./figs/network.jpg")
+```
 
 ---
 class:inverse, center, middle
