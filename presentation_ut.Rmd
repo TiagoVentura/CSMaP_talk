@@ -264,7 +264,29 @@ knitr::include_graphics("./figs/ideo_flip.png")
 knitr::include_graphics("./figs/att_flip.png")
 ```
 ]
+
 ---
+## Media Equilibrium Positions
+
+**Using Adams, Merill, and Grofman's (2012) solution:**
+
+.pull-left[
+```{r out.width="100%"}
+knitr::include_graphics("./figs/Media_bolsonaro_eq_less_rep.png")
+```
+]
+
+.pull-right[
+```{r out.width="100%"}
+knitr::include_graphics("./figs/Media_bolsonaro_eq_more_rep.png")
+```
+]
+
+
+
+---
+
+
 
 ## Conclusion: Attention and Ideology
 
@@ -922,4 +944,11 @@ Where:
 * $\gamma_{[i]}$ = Overdispersion parameter
 
 
+---
+# Model Winbugs
+
+```{r out.width="80%"}
+knitr::include_graphics("./figs/model_bugs.png")
+
+```
 
